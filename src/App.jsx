@@ -7,6 +7,8 @@ import New from "./components/New";
 import Popular from "./components/Popular";
 
 function App() {
+
+  
   return (
     <div className="App">
       <Header />
