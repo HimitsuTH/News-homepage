@@ -1,0 +1,24 @@
+// Abstracts
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variable";
+
+//Base
+
+@import "./sass/base/reset";
+@import "./sass/base/page";
+
+//Component
+
+@import "./sass/components/btn";
+@import "./sass/components/link";
+@import "./sass/components/box";
+@import "./sass/components/content";
+@import "./sass/components/container";
+
+//Layout
+
+@import "./sass/layout/header";
+@import "./sass/layout/main";
+@import "./sass/layout/MainContent";
+@import "./sass/layout/news";
+@import "./sass/layout/popular"

@@ -1,0 +1,7 @@
+.popular {
+    @media (min-width:$screen-sm){
+        @include flex($direction:row);
+        grid-column: span 2;
+        margin-top: 2em;
+    }
+}

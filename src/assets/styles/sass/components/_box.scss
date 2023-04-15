@@ -1,0 +1,23 @@
+.box {
+  padding: 1em 0;
+
+  &--midle {
+    border-top: 1px solid $Grayish-blue;
+    border-bottom: 1px solid $Grayish-blue;
+  }
+
+  &--popular {
+    @include flex($direction: row, $justify: flex-start);
+    gap: 1rem;
+    .img-container {
+      @include size($width:120px, $height:100%);
+      display: block;
+      background-color: #333;
+        img{
+            @include size($width:100%);
+        }
+    }
+  }
+}
+
+

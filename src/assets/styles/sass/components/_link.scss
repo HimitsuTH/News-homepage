@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+  color: $Very-dark-blue;
+}
+
+.link {
+  &:hover {
+    color: $Soft-red;
+  }
+  &--menu {
+    color: $Very-dark-blue;
+  }
+
+  &--news {
+    color: $Off-white;
+
+    &:hover {
+      color: $Soft-orange;
+    }
+  }
+}

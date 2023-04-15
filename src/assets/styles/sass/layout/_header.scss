@@ -1,0 +1,51 @@
+.header {
+  @include flex($direction: row, $justify: space-between);
+  @include size(100%, 10vh);
+
+  .menu {
+    @include size(75%, 100%);
+    @include flex($justify: flex-start, $align: flex-start);
+    gap: 2.5rem 0;
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    // display: none;
+
+    transform: translateX(50%);
+    transition: 0.2s all;
+    padding: 8em 2em;
+    background-color: $Off-white;
+    z-index: 1;
+
+    @media (min-width: $screen-md) {
+      opacity: 1;
+      padding: 0;
+      visibility: visible;
+      position: static;
+      @include flex($direction:row,$justify: flex-end, $align: center);
+      transform: translateX(0%);
+      gap: 3rem;
+    }
+
+    &--active {
+      transform: translateX(0%);
+      opacity: 1;
+      visibility: visible;
+
+      &::before {
+        z-index: 0;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(240, 100%, 5%, 0.5);
+      }
+    }
+  }
+}

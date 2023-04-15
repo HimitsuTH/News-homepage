@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter-bold";
+  src: url("/src/assets/fonts/static/Inter-ExtraBold.ttf");
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $Off-white;
+  position: relative;
+}
+
+.App {
+  display: flex;
+  // @include size(100%);
+
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: hidden;
+  flex-direction: column;
+
+  padding: 1em;
+
+  @media (min-width: $screen-md ) {
+    margin: 5em 8em;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+h1 {
+  font-family: "Inter-bold";
+  font-size: 3em;
+  line-height: 1.25em;
+}
+
+.text-orange {
+  color: $Soft-orange;
+}

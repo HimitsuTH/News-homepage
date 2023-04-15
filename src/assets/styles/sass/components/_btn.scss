@@ -1,0 +1,28 @@
+.btn {
+  background: transparent;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+
+  &--menu {
+    z-index: 2;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+  &--main {
+    text-transform: uppercase;
+    background-color: $Soft-red;
+    color: $Off-white;
+    padding: 1em;
+    margin-top: 1em;
+    @include size(50%);
+    transition: background 200ms;
+    &:hover {
+      background: $Very-dark-blue;
+    }
+
+ 
+  }
+}
