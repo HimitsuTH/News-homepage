@@ -6,6 +6,10 @@
   }
 
   &--main {
+
+    p{
+        width: 90%;
+    }
     @media (min-width: $screen-md) {
       display: flex;
       //   grid-template-columns: repeat(2, 1fr);
@@ -16,8 +20,12 @@
     }
     @media (min-width: $screen-lg) {
       display: grid;
-    //   display: flex;
-        grid-template-columns: repeat(2, 1fr);
+      //   display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      h1 {
+        width: 8ch;
+      }
+
       //   grid-row: 50%;
     }
   }

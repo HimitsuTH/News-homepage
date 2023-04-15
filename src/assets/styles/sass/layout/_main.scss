@@ -1,10 +1,10 @@
 main {
   width: 100%;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     display: grid;
     gap: 0 2em;
-    grid-template-columns: 1fr 50%;
+    grid-template-columns: 1fr 30%;
     grid-template-rows: auto;
   }
 }

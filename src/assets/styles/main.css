@@ -135,7 +135,7 @@ h1 {
 .btn--menu {
   z-index: 2;
 }
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   .btn--menu {
     display: none;
   }
@@ -203,6 +203,9 @@ a {
 .content--popular {
   flex: 1;
 }
+.content--main p {
+  width: 90%;
+}
 @media (min-width: 48em) {
   .content--main {
     display: flex;
@@ -215,6 +218,9 @@ a {
   .content--main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .content--main h1 {
+    width: 8ch;
   }
 }
 
@@ -250,7 +256,7 @@ a {
   background-color: hsl(36, 100%, 99%);
   z-index: 1;
 }
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   .header .menu {
     opacity: 1;
     padding: 0;
@@ -284,11 +290,11 @@ a {
 main {
   width: 100%;
 }
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   main {
     display: grid;
     gap: 0 2em;
-    grid-template-columns: 1fr 50%;
+    grid-template-columns: 1fr 30%;
     grid-template-rows: auto;
   }
 }
@@ -313,7 +319,7 @@ main {
   }
 }
 
-@media (min-width: 36em) {
+@media (min-width: 62em) {
   .popular {
     display: flex;
     flex-direction: row;
