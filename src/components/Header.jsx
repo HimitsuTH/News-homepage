@@ -4,20 +4,20 @@ import menu from "../assets/images/icon-menu.svg";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth > 992);
-  useEffect(() => {
+//   const [isMobile, setIsMobile] = useState(window.innerWidth > 992);
+//   useEffect(() => {
 
-    if(!isMobile){
-      const menu = document.getElementById("menu");
-      menu.classList.remove("menu--active");
-      setToggle(false);
-    }
+//     if(!isMobile){
+//       const menu = document.getElementById("menu");
+//       menu.classList.remove("menu--active");
+//       setToggle(false);
+//     }
 
-    window.addEventListener("resize", () => {
-        const ismobile = window.innerWidth < 1200;
-        if (ismobile !== isMobile) setIsMobile(ismobile);
-    }, false);
-}, [isMobile]);
+//     window.addEventListener("resize", () => {
+//         const ismobile = window.innerWidth > 992;
+//         if (ismobile !== isMobile) setIsMobile(ismobile);
+//     }, false);
+// }, [isMobile]);
 
 
   const handdleOpenMenu = () => {

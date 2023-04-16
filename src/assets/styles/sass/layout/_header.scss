@@ -25,7 +25,7 @@
       padding: 0;
       visibility: visible;
       position: static;
-      @include flex($direction:row,$justify: flex-end, $align: center);
+      @include flex($direction: row, $justify: flex-end, $align: center);
       transform: translateX(0%);
       gap: 3rem;
     }
@@ -47,9 +47,9 @@
         background-color: hsla(240, 100%, 5%, 0.5);
       }
 
-      @media (min-width: $screen-lg){
+      @media (min-width: $screen-lg) {
         &::before {
-          display: none;
+          content: none;
         }
       }
     }

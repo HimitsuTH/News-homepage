@@ -286,6 +286,11 @@ a {
   height: 100%;
   background-color: hsla(240, 100%, 5%, 0.5);
 }
+@media (min-width: 62em) {
+  .header .menu--active::before {
+    content: none;
+  }
+}
 
 main {
   width: 100%;
